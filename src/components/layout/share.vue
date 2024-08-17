@@ -9,7 +9,6 @@
   const handleShare = () => {
     const url = encodeURIComponent(window.location.href)
     const title = encodeURIComponent(document.title || APP_META.title)
-    // https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/overview
     const tweetURL = `https://twitter.com/intent/tweet?url=${url}&text=${title}`
     openWindow(tweetURL, { name: `Share: ${props.repository}` })
   }
@@ -18,7 +17,7 @@
 <template>
   <div id="share">
     <button class="share-button" title="Share to Twitter" @click="handleShare">
-      <i class="iconfont icon-twitter"></i>
+      <i class="iconfont icon-twitter-x"></i>
       <span class="text">Tweet</span>
     </button>
   </div>
@@ -54,18 +53,17 @@
       cursor: pointer;
       user-select: none;
       border: 1px solid $body-bg;
-      border-top: 2px solid $twitter-primary;
       border-left: none;
       border-top-right-radius: $lg-radius;
       border-bottom-right-radius: $lg-radius;
-      color: $twitter-primary;
+      color: $link-color;
       background-color: $banner-bg;
       transition:
         background-color $transition-time,
         color $transition-time;
       &:hover {
         color: $white;
-        background-color: $twitter-primary;
+        background-color: $twitter-x-primary;
       }
 
       .iconfont {
