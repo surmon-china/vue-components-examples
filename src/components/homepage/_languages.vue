@@ -93,19 +93,20 @@
 
       .item {
         display: inline-flex;
-        align-items: baseline;
+        align-items: center;
         user-select: none;
 
         .color {
           display: inline-block;
           width: 14px;
           height: 10px;
-          margin-right: $xs-gap;
+          margin-right: $sm-gap;
           border-radius: $xs-radius;
         }
 
         .name {
           margin-right: $xs-gap;
+          margin-top: 2px;
           font-size: $font-size-small + 1;
           font-weight: bold;
           font-family:
