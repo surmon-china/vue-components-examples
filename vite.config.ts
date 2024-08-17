@@ -36,6 +36,14 @@ export default defineConfig(() => ({
   build: {
     cssCodeSplit: false
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern',
+        silenceDeprecations: ['mixed-decls']
+      }
+    }
+  },
   ssr: {
     noExternal: ['vue-codemirror', '@videojs-player/vue', '@videojs-player/react', 'vue-touch-ripple']
   }

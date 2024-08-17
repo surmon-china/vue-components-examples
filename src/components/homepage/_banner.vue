@@ -47,7 +47,7 @@
           <github-button
             :link="repoUrl"
             :count="repoDetail?.stargazers_count || 0"
-            :countLink="`${repoUrl}/stargazers`"
+            :count-link="`${repoUrl}/stargazers`"
             icon="icon-github"
             class="item"
             text="Star"

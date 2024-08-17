@@ -17,8 +17,7 @@
     if (props.countText) {
       return props.countText
     }
-
-    return hasCount ? countToK(props.count as number) : null
+    return hasCount.value ? countToK(props.count as number) : null
   })
 </script>
 

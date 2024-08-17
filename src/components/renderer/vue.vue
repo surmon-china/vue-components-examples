@@ -22,7 +22,7 @@
   <div class="vue-renderer">
     <layout-navbar class="navbar" :repository="repository" />
     <layout-share :repository="repository" />
-    <layout-toolbox v-if="toolbox" class="toolbox" :repository="repository" @toTop="handleToTop" />
+    <layout-toolbox v-if="toolbox" class="toolbox" :repository="repository" @to-top="handleToTop" />
     <slot></slot>
     <layout-footbar class="footbar" :repository="repository" />
   </div>

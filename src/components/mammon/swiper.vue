@@ -13,7 +13,7 @@
     direction="vertical"
     :css-mode="true"
     :modules="[Pagination, Mousewheel]"
-    :autoHeight="true"
+    :auto-height="true"
     :loop="true"
     :pagination="{ clickable: true }"
     :autoplay="{

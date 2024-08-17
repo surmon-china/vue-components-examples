@@ -40,8 +40,8 @@
       adProviders[targetIndex - 1] = gaOnly
         ? unionMammonProviders[0]
         : Math.ceil(Math.random() * 10) > 6
-        ? customMammonProviders[0]
-        : unionMammonProviders[0]
+          ? customMammonProviders[0]
+          : unionMammonProviders[0]
     } else {
       // ad = total / allProviders.length + 1
       const allProviders = gaOnly ? unionMammonProviders : [...customMammonProviders, ...unionMammonProviders]
