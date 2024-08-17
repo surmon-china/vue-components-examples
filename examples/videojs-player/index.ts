@@ -16,10 +16,10 @@ const reactBasicExample = {
   language: 'typescript'
 }
 
-const vueComponents = import.meta.glob<{ default: any }>('./*.vue', { eager: true })
-const vueComponentRaws = import.meta.glob<string>('./*.vue', { as: 'raw', eager: true })
+const vueComponents = import.meta.glob<{ default: any }>('./*.vue', { eager: true, import: 'default' })
+const vueComponentRaws = import.meta.glob<string>('./*.vue', { eager: true, query: '?raw', import: 'default' })
 const vueExamples: Array<ExampleComponentConfig> = Object.keys(vueComponents).map((id) => ({
-  component: vueComponents[id].default,
+  component: vueComponents[id],
   raw: vueComponentRaws[id],
   language: 'vue'
 }))

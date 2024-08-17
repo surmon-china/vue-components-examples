@@ -3,8 +3,8 @@ import { getGitHubFileSourceURL } from '@/transforms/url'
 import { GITHUB_PROJECT_NAME } from '@/config'
 
 export interface ExampleComponent {
-  name: string
-  title: string
+  name?: string
+  title?: string
   path: string
   url: string
   raw: string

@@ -40,7 +40,7 @@ export const createUniversalApp = (options: AppCreatorOptions) => {
   app.use(head)
   app.use(theme)
   app.use(visitor)
-  app.component(UlinkComponent.name, UlinkComponent)
+  app.component(UlinkComponent.name!, UlinkComponent)
 
   return {
     app,

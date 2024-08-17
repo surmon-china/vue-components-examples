@@ -4,7 +4,7 @@
   import { APP_META, GITHUB_USER_URL } from '@/config'
 
   const meta = reactive({ ...APP_META })
-  useSeoMeta(() => meta)
+  useSeoMeta(meta)
   onBeforeMount(() => {
     meta.title = `Redirect to GitHub ...`
     location.href = GITHUB_USER_URL

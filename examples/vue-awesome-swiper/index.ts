@@ -1,8 +1,8 @@
-const components = import.meta.glob<{ default: any }>('./*.vue', { eager: true })
-const raws = import.meta.glob<string>('./*.vue', { as: 'raw', eager: true })
+const components = import.meta.glob<{ default: any }>('./*.vue', { eager: true, import: 'default' })
+const raws = import.meta.glob<string>('./*.vue', { eager: true, query: '?raw', import: 'default' })
 
 export default Object.keys(components).map((id) => ({
-  component: components[id].default,
+  component: components[id],
   raw: raws[id],
   language: 'vue'
 }))

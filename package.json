@@ -65,7 +65,7 @@
     "vue": "^3.4.x",
     "vue-codemirror": "^6.1.1",
     "vue-router": "^4.4.x",
-    "vue-touch-ripple": "^4.1.1"
+    "vue-touch-ripple": "^4.x"
   },
   "devDependencies": {
     "@eslint/js": "^9.x",
